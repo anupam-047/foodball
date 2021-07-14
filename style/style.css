@@ -1,0 +1,336 @@
+/* ---------------------- 
+        Google Fonts Start 
+ -------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* ---------------------- 
+     Google Fonts End
+ -------------------------*/
+
+/* ---------------------- 
+    Common Style Start 
+-------------------------*/
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    width: 1050px;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+/* ---------------------- 
+    Common Style End
+-------------------------*/
+
+/* ---------------------- 
+    Banner Section Start 
+-------------------------*/
+
+.main-banner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 30px;
+    background: #2D25A0;
+    margin-bottom: 50px;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 1440px;
+    height: 677px;
+}
+
+.banner h1 {
+    color: #fff;
+    font-size: 64px;
+    font-weight: bold;
+}
+
+.btn {
+    background: #E02C6D;
+    color: #fff;
+    border-style: none;
+    padding: 13px 33px;
+    font-size: 16px;
+    transition: .3s;
+}
+
+.btn:hover {
+    box-shadow: 8px 8px #d8165d;
+    transition: .7s;
+}
+
+.watch-button {
+    padding-left: 10px;
+}
+
+.right-side:hover .banner-image{
+    transform:rotate(10deg);
+    transform-origin: top right;
+    transition: transform 1s ease-out 0.3s;
+}
+
+/* ---------------------- 
+    Banner Section End 
+-------------------------*/
+
+/* ---------------------- 
+    Players Section Start 
+-------------------------*/
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+}
+
+.player {
+    background: #fff;
+    padding: 15px;
+    margin: 0 0 30px 0;
+    box-shadow: 0px 5px 18px rgba(212, 207, 207, 0.75);
+}
+
+.players .player-photo img {
+    width: 300px;
+    height: 256px;
+}
+
+.player-title {
+    font-size: 28px;
+    margin: 7px 0;
+}
+
+.player-description {
+    font-size: 16px;
+    color: #6C6C6C;
+}
+
+/* ---------------------- 
+    Players Section End 
+-------------------------*/
+
+/* ----------------------
+    Gallery Section Start 
+-------------------------*/
+
+.gallerys-title {
+    font-size: 36px;
+    text-align: center;
+    text-shadow: 0px 6px 6px rgba(156, 140, 124, 1);
+}
+
+.gallerys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 30px;
+    margin-bottom: 10px;
+}
+
+.gallery {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0px 6px 6px rgba(156, 140, 124, 1);
+}
+
+.gallery-photo {
+    width: 360px;
+    height: 200px;
+}
+
+.gallery-photo:hover {
+    transform: scale(1.6);
+    transition: transform 3s ease-in-out;
+}
+
+.gallery-photo img {
+    width: 100%;
+}
+
+/* ----------------------
+    Gallery Section End 
+-------------------------*/
+
+
+/* ----------------------
+    Sponsor Section Start 
+-------------------------*/
+.sponsors-title{
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 0px 6px 6px rgba(156, 140, 124, 1);
+    text-transform: uppercase;
+    line-height: 30px;
+}
+
+.sponsors {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 30px;
+    background: #eeecec;
+    padding: 50px 150px;
+    margin-bottom: 50px;
+    border-top: 4px solid #2D25A0;
+    border-bottom: 4px solid #2D25A0;
+}
+
+.sponsor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sponsor-photo {
+    width: 160px;
+    height: 70px;
+    padding:25px;
+}
+
+/* ----------------------
+    Sponsor Section End 
+-------------------------*/
+
+/* ----------------------
+    Footer Part Start 
+-------------------------*/
+
+footer {
+    text-align: center;
+}
+
+footer img {
+    width: 483px;
+    height: 110px;
+}
+
+footer p {
+    font-size: 18px;
+}
+
+.filled {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgba(11, 13, 23, 0.09);
+    color: #969BAB;
+    font-weight: 700;
+    line-height: 2;
+    margin-right: 10px;
+}
+
+/* -------------------------
+    Footer Part End 
+ --------------------------*/
+
+
+
+
+/* ------------------------
+    Media Queries Start 
+--------------------------*/
+
+/* Media Queries for Mobile Device Start */
+
+@media only screen and (max-width:688px) {
+    .container {
+        width: 95%
+    }
+    .players, .main-banner, .gallerys {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .sponsors {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0px;
+    }
+
+    .player {
+        flex-direction: column;
+        box-shadow: 0px 5px 18px rgba(212, 207, 207, 0.75);
+    }
+    .banner {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .banner img {
+        width: 60%;
+        padding-left: 20%;
+    }
+    .right-side {
+        margin: 80px;
+    }
+    .banner h1 {
+        font-size: 36px;
+    }
+    .gallery {
+        margin: 10px;
+    }
+
+    .sponsor-photo {
+        padding: 5px;
+    }
+
+    footer img {
+        width: 85%;
+        height: 100%;
+    }
+}
+/* Media Queries for Mobile Device end */
+
+
+/* Media Queries for Tablet Devices Start */
+
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    .container {
+        width: 91%
+    }
+    .players, .gallerys {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .sponsors {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0px;
+    }
+    .banner {
+        width: 1255px;
+        height: 486px;
+    }
+    .banner img {
+        width: 60%;
+    }
+    .right-side {
+        margin: 30px;
+    }
+    .banner h1 {
+        font-size: 46px;
+    }
+    .gallerys-title {
+        word-wrap: break-word;
+        line-height: 40px;
+    }
+    .gallery {
+        margin: 10px;
+    }
+}
+/* Media Queries for Tablet Devices End */
+/* ------------------------
+    Media Queries End 
+--------------------------*/
